@@ -425,16 +425,18 @@
             <!-- Buffer List (Mini Table) -->
             <div style="margin-bottom: 15px;">
                 <strong>รายการฝึกอบรม:</strong>
-                <table class="mini-table" id="bufferTable">
-                    <thead>
-                        <tr>
-                            <th>หลักสูตร</th>
-                            <th>วันที่อบรม</th>
-                            <th style="width: 60px;">ลบ</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+                <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+                    <table class="mini-table" id="bufferTable">
+                        <thead>
+                            <tr>
+                                <th>หลักสูตร</th>
+                                <th>วันที่อบรม (ถ้ามี)</th>
+                                <th style="width: 60px;">ลบ</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
                 <div id="bufferEmpty"
                     style="padding: 15px; text-align: center; color: #94a3b8; border: 1px dashed #cbd5e1; border-top: 0;">
                     (ยังไม่มีรายการฝึกอบรม)
