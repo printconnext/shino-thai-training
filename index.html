@@ -323,11 +323,16 @@
 
             .mini-table {
                 font-size: 0.8rem;
+                width: 100%;
+                min-width: 400px;
+                /* Force table to be wider than screen to trigger scroll */
             }
 
             .mini-table th,
             .mini-table td {
                 padding: 8px 6px;
+                white-space: nowrap;
+                /* Prevent text wrapping */
             }
         }
 
