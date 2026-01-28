@@ -217,6 +217,14 @@
 
         /* Responsive Styles */
         @media screen and (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+                max-width: 100vw;
+            }
+
             body {
                 padding: 10px;
             }
@@ -224,6 +232,9 @@
             .container {
                 padding: 15px;
                 border-radius: 12px;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
             }
 
             h1 {
