@@ -324,15 +324,35 @@
             .mini-table {
                 font-size: 0.8rem;
                 width: 100%;
-                min-width: 400px;
-                /* Force table to be wider than screen to trigger scroll */
+                table-layout: fixed;
             }
 
             .mini-table th,
             .mini-table td {
-                padding: 8px 6px;
-                white-space: nowrap;
-                /* Prevent text wrapping */
+                padding: 8px 4px;
+                white-space: normal;
+                /* Allow text wrapping */
+                word-wrap: break-word;
+                vertical-align: middle;
+            }
+
+            /* Course Column */
+            .mini-table th:nth-child(1),
+            .mini-table td:nth-child(1) {
+                width: 55%;
+            }
+
+            /* Date Column */
+            .mini-table th:nth-child(2),
+            .mini-table td:nth-child(2) {
+                width: 30%;
+            }
+
+            /* Delete Column */
+            .mini-table th:nth-child(3),
+            .mini-table td:nth-child(3) {
+                width: 15%;
+                text-align: center;
             }
         }
 
