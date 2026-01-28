@@ -291,17 +291,24 @@
             .training-input-row {
                 flex-direction: column !important;
                 align-items: stretch !important;
+                flex-wrap: nowrap !important;
             }
 
-            .training-input-row input {
+            .training-input-row input,
+            .training-input-row input[type="text"],
+            .training-input-row input[type="date"] {
                 width: 100% !important;
                 min-width: 100% !important;
-                margin-bottom: 10px;
+                max-width: 100% !important;
+                margin-bottom: 10px !important;
                 flex: none !important;
+                box-sizing: border-box !important;
             }
 
-            .training-input-row button {
+            .training-input-row button,
+            .training-input-row .btn {
                 width: 100% !important;
+                margin-bottom: 0 !important;
             }
 
             .mini-table {
